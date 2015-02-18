@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hidden Answer</title>
+</head>
+
+<body>
+
+  <p>So, what color was Napoleon's white horse?
+    <br><em id="1"> Click for answer! </em>
+  </p>
+
+<script>
+var x = document.getElementById("1");
+
+var fNapoleon = function () {
+  x.innerHTML = "White";
+}
+
+x.addEventListener("click", fNapoleon, false);
+x.addEventListener("mouseover", function() {x.style.color="red";}, false);
+x.addEventListener("mouseout", function() {x.style.color="black";}, false);
+</script>
+</body>
+
+</html>
