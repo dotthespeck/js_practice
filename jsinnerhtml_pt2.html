@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Hello World</title>
+</head>
+
+<body>
+
+  <p>So, what color was Napoleon's white horse?
+  <br><em id="1" onclick="napoleon();"> Click for answer! </em></p>
+
+  <p>Who is the cutest dog on Paisley Park?
+    <br><em id="2" onclick="marlon();"> Click for answer! </em></p>
+
+  <p>What color is the cutest dog on Paisley Park?
+    <br><em id="3" onclick="white();"> Click for answer! </em></p>
+
+<script>
+function napoleon() {
+  document.getElementById("1").innerHTML = "White";
+};
+
+function marlon() {
+  document.getElementById("2").innerHTML = "Marlon";
+};
+
+function white() {
+  document.getElementById("3").innerHTML = "The same as Napoleon's horse";
+};
+
+</script>
+
+</body>
+
+</html>
