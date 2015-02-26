@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hidden Answer</title>
+</head>
+
+<body>
+
+  <p>So, what color was Napoleon's white horse? </p>
+    <br><em id="1"> Click for answer! </em>
+
+  <p>And what color is Marlon the Dog? </p>
+  <br><em id="2"> Click for answer! </em>
+
+<script>
+
+var yourBrowser = (function () {
+  if (document.addEventListener) {
+    return function (element, event, actionHandler) {
+      element.addEventListener(event, actionHandler, false);
+    };
+  }
+  else {
+    return function (element, event, actionHandler) {
+      element.attachEvent('on' + event, actionHandler);
+    };
+  }
+}());
+
+var arr = [];
+
+var x = document.getElementById("1");
+  var fNapoleon = function () {
+    x.innerHTML = "White";
+  };
+  arr.push.x();
+
+var y = document.getElementById("2");
+  var fMarlon = function () {
+    y.innerHTML = "White";
+  };
+  arr.push.y();
+
+
+  yourBrowser(x, 'click', fNapoleon);
+  yourBrowser(x, "mouseover", function() {x.style.color="red";}, false);
+  yourBrowser(x, "mouseout", function() {x.style.color="black";}, false);
+  </script>
+
+</script>
+</body>
+
+</html>
